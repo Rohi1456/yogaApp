@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <android.support.design.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="5dp"
+        android:padding="10dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <appliedsyntax.io.yoga.customfonts.MyTextView_Roboto_Bold
+            android:id="@+id/locationNameTVID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Location Name"
+            android:paddingTop="10dp"
+            android:drawablePadding="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:drawableRight="@drawable/ic_down_arrow"
+            android:drawableLeft="@drawable/ic_pin"
+            android:gravity="bottom"
+            />
+        <appliedsyntax.io.yoga.customfonts.MyTextView_Roboto_Light
+            android:id="@+id/locationAddressETID"
+            android:layout_below="@id/locationNameTVID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-5dp"
+            android:text="Address"
+            android:visibility="gone"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"/>
+
+
+    </RelativeLayout>
+
+</android.support.design.card.MaterialCardView>
+
+</LinearLayout>

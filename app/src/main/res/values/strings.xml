@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Yoga</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="yoga">Yoga</string>
+    <string name="fee_got">Fee Paid</string>
+    <string name="fee_not_get">Fee Not Paid</string>
+    <string name="save">Save</string>
+    <string name="edit_location">Edit Location</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="make_in_active">Make Inactive</string>
+    <string name="make_active">Make Active</string>
+    <string name="edit_stident">Edit Student</string>
+    <string name="edit_class">Edit Class</string>
+    <string name="locations">Locations</string>
+    <string name="payment_history">Payment History</string>
+    <string name="students_title">Students</string>
+    <string name="locations_title">Locations</string>
+    <string name="classes_title">Classes</string>
+    <string name="home_title">Home</string>
+</resources>

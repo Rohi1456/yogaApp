@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="10dp">
+    <appliedsyntax.io.yoga.customfonts.MyTextView_Roboto_Light
+        android:id="@+id/paidDateTVID"
+        android:paddingTop="5dp"
+        android:textSize="13dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:textColor="@android:color/black"
+        android:text="Due Date"/>
+    <appliedsyntax.io.yoga.customfonts.MyTextView_Roboto_Light
+        android:id="@+id/dueDateTVID"
+        android:layout_below="@id/paidDateTVID"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:textSize="13dp"
+        android:text="PaidDate"/>
+    <appliedsyntax.io.yoga.customfonts.MyTextView_Roboto_Light
+        android:id="@+id/amountTVID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="500"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:drawablePadding="5dp"        android:drawableRight="@drawable/ic_ruppe_15"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp" />
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/cancelTVID"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:drawableEnd="@drawable/ic_close"
+        android:drawableRight="@drawable/ic_close"/>
+    <appliedsyntax.io.yoga.customfonts.MyTextView_Roboto_Light
+        android:id="@+id/dialouge_titleTVID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Status"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#f40e0d0d"
+        android:textSize="18dp"
+        android:layout_margin="5dp"/>
+
+    <RadioGroup
+        android:id="@+id/edit_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <RadioButton
+            android:id="@+id/yesRBID"
+            style="@style/status"
+            android:textStyle="normal"
+            android:buttonTint="@color/colorPrimary"
+            android:text="Yes" />
+
+        <RadioButton
+            android:id="@+id/noRBID"
+            style="@style/status"
+            android:textStyle="normal"
+            android:buttonTint="@color/colorPrimary"
+            android:text="No" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+       android:gravity="right"
+        android:layout_marginLeft="10dp"
+        >
+        <appliedsyntax.io.yoga.customfonts.MyTextView_Roboto_Light
+            android:id="@+id/okTVID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ok"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimary"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"/>
+
+    </LinearLayout>
+</LinearLayout>

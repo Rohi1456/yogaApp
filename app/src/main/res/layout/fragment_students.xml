@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.FragmentStudents"
+    android:background="@color/yash">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+<appliedsyntax.io.yoga.customfonts.EditText_Roboto_Light
+    android:id="@+id/searchETID"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Search Here"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:textSize="13dp"
+    android:drawablePadding="10dp"
+    android:drawableLeft="@drawable/ic_search"
+    android:paddingLeft="10dp"
+    android:singleLine="true"
+    android:elevation="5dp"
+    android:background="@drawable/search_back"/>
+    <ProgressBar
+        android:id="@+id/progress_Bar"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:layout_marginTop="10dp"
+        android:indeterminateTintMode="src_atop"
+        android:indeterminateTint="@color/colorPrimary"
+        />
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/refreshStudents_swID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/students_RVID"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"/>
+            </LinearLayout>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/AddStudentFBID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="6dp"
+            android:clickable="true"
+            android:backgroundTint="@color/colorPrimary"
+            app:pressedTranslationZ="12dp"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_add"
+            android:layout_gravity="bottom|end"
+            />
+    </android.support.design.widget.CoordinatorLayout>
+</FrameLayout>

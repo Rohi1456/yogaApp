@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#b9131313"
+    >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#e6e3aa"/>
+    <appliedsyntax.io.yoga.customfonts.MyTextView_Roboto_Light
+        android:id="@+id/homeTVID"
+        style="@style/menu_item"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_home"
+        android:text="Home" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/iew_divider"
+        android:background="#e6e3aa"/>
+    <appliedsyntax.io.yoga.customfonts.MyTextView_Roboto_Light
+        android:id="@+id/StudentsTVID"
+        style="@style/menu_item"
+        android:text="Students"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_team"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/iew_divider"
+        android:background="#e6e3aa"/>
+    <appliedsyntax.io.yoga.customfonts.MyTextView_Roboto_Light
+        android:id="@+id/LocationsTVID"
+        style="@style/menu_item"
+        android:text="Locations"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_map_location"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/iew_divider"
+        android:background="#e6e3aa"/>
+    <appliedsyntax.io.yoga.customfonts.MyTextView_Roboto_Light
+        android:id="@+id/BatchesTVID"
+        style="@style/menu_item"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_class"
+        android:text="Classes" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/iew_divider"
+        android:background="#e6e3aa"/>
+
+
+
+</LinearLayout>
+    </LinearLayout>

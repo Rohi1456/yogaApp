@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="5dp"
+    android:padding="10dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <appliedsyntax.io.yoga.customfonts.MyTextView_Roboto_Light
+            android:id="@+id/BatchNameTVID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="Batch Name Tues-Friday"
+            android:padding="10dp"
+            android:textSize="16dp"
+            android:gravity="bottom"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_id_card2"
+            />
+        <appliedsyntax.io.yoga.customfonts.MyTextView_Roboto_Light
+            android:id="@+id/BatchLocationTVID"
+            android:layout_below="@id/BatchNameTVID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_pin"
+           android:text="Location Name"
+            android:paddingLeft="10dp"
+            android:textSize="16dp"
+            android:drawablePadding="10dp"
+            android:paddingBottom="10dp"/>
+        <appliedsyntax.io.yoga.customfonts.MyTextView_Roboto_Light
+            android:id="@+id/classETVID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="Edit"
+            android:textSize="16dp"
+            android:padding="10dp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+    </RelativeLayout>
+
+</android.support.design.card.MaterialCardView>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    >
+    <appliedsyntax.io.yoga.customfonts.MyTextView_Roboto_Light
+        android:id="@+id/srcName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="StudentName"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <appliedsyntax.io.yoga.customfonts.MyTextView_Roboto_Light
+            android:id="@+id/srcMobile"
+            android:layout_width="130dp"
+            android:drawableLeft="@drawable/ic_mobile"
+            android:layout_height="wrap_content"
+            android:drawablePadding="3dp"
+            android:textSize="14dp"
+            android:text="9160045711"/>
+    <appliedsyntax.io.yoga.customfonts.MyTextView_Roboto_Light
+        android:id="@+id/srcClass"
+        android:layout_weight="1"
+        android:textSize="14dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="3dp"
+        android:drawableLeft="@drawable/id_unselected15"
+        android:text="Class Name"/>
+
+    </LinearLayout>
+    <View
+        android:id="@+id/line1"
+        android:layout_below="@id/PstudentNameTVID"
+        android:layout_width="match_parent"
+        android:layout_height="0.01dp"
+        android:background="#591c1c1d"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp" />
+</LinearLayout>

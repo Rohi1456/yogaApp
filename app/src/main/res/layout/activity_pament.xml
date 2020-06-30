@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".acivity.ActivityPayment">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolbar_bg"
+        android:elevation="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <appliedsyntax.io.yoga.customfonts.MyTextView_Roboto_Light
+                android:id="@+id/titleTVID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:gravity="left"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_toLeftOf="@id/logo"
+
+                />
+
+            <ImageView
+                android:id="@+id/backADDS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/ic_left_arrow"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <appliedsyntax.io.yoga.customfonts.Auto_CompleteText_Roboto_Light
+        android:id="@+id/searchATID"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="StudentName or Mobile Number"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textSize="16dp"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/ic_search"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:elevation="5dp"
+        android:background="@drawable/search_back"/>
+
+    <appliedsyntax.io.yoga.customfonts.MyTextView_Roboto_Light
+        android:id="@+id/note"
+        android:layout_below="@id/searchATID"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Note: Select the Student from Search"
+        android:drawablePadding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"/>
+
+    <appliedsyntax.io.yoga.customfonts.EditText_Roboto_Light
+        android:layout_below="@id/note"
+        android:id="@+id/PstudentAmountETID"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:inputType="numberDecimal"
+        android:singleLine="true"
+        android:maxLength="6"
+        android:background="@drawable/amount_et_bg"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="20dp"
+        android:drawableRight="@drawable/ic_rupee"
+        android:hint="Enter the Amount"
+        />
+    <View
+        android:id="@+id/line6"
+        android:layout_below="@id/PstudentAmountETID"
+        android:layout_width="match_parent"
+        android:layout_height="0.01dp"
+        android:background="#591c1c1d"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"/>
+
+
+    <appliedsyntax.io.yoga.customfonts.MyTextView_Roboto_Light
+        android:layout_below="@id/line6"
+        android:id="@+id/PstudentNameTVID"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textColor="#000000"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="20dp"
+        android:drawableRight="@drawable/ic_user"
+        android:hint="Student"
+        />
+    <View
+        android:id="@+id/line1"
+        android:layout_below="@id/PstudentNameTVID"
+        android:layout_width="match_parent"
+        android:layout_height="0.01dp"
+        android:background="#591c1c1d"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"/>
+
+    <appliedsyntax.io.yoga.customfonts.MyTextView_Roboto_Light
+        android:id="@+id/PstudentMobileTVID"
+        android:layout_below="@id/line1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textColor="#000000"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="20dp"
+        android:drawableRight="@drawable/ic_phone_call"
+        android:hint="9999999999"
+        />
+    <View
+        android:id="@+id/line2"
+        android:layout_below="@id/PstudentMobileTVID"
+        android:layout_width="match_parent"
+        android:layout_height="0.01dp"
+        android:background="#591c1c1d"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"/>
+    <appliedsyntax.io.yoga.customfonts.MyTextView_Roboto_Light
+        android:id="@+id/PstudentClassTVID"
+        android:layout_below="@id/line2"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textColor="#000000"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="20dp"
+        android:drawableRight="@drawable/id_unselected"
+        android:hint="class"
+        />
+    <View
+        android:id="@+id/line3"
+        android:layout_below="@id/PstudentClassTVID"
+        android:layout_width="match_parent"
+        android:layout_height="0.01dp"
+        android:background="#591c1c1d"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"/>
+    <RelativeLayout
+        android:id="@+id/Fee_PaidRL"
+        android:layout_below="@id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <appliedsyntax.io.yoga.customfonts.MyTextView_Roboto_Light
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="#000000"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="Fee Paid Date"
+            android:layout_alignParentLeft="true"
+            />
+
+        <appliedsyntax.io.yoga.customfonts.MyTextView_Roboto_Light
+            android:id="@+id/feePaidDateTVID"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="Thus feb 15 2017"
+            android:drawableRight="@drawable/ic_select"
+            android:drawablePadding="10dp"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+    <View
+        android:id="@+id/line4"
+        android:layout_below="@id/Fee_PaidRL"
+        android:layout_width="match_parent"
+        android:layout_height="0.01dp"
+        android:background="#591c1c1d"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"/>
+    <RelativeLayout
+        android:id="@+id/FeeDueRL"
+        android:layout_below="@id/line4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <appliedsyntax.io.yoga.customfonts.MyTextView_Roboto_Light
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="#000000"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="Fee Due Date"
+            android:layout_alignParentLeft="true"
+            />
+
+        <appliedsyntax.io.yoga.customfonts.MyTextView_Roboto_Light
+            android:id="@+id/feeDueDateTVID"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/ic_select"
+            android:drawablePadding="10dp"
+            />
+    </RelativeLayout>
+    <View
+        android:id="@+id/line5"
+        android:layout_below="@id/FeeDueRL"
+        android:layout_width="match_parent"
+        android:layout_height="0.01dp"
+        android:background="#591c1c1d"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"/>
+
+
+    <appliedsyntax.io.yoga.customfonts.Button_Roboto_Medium
+        android:id="@+id/makePaymentBTNID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Make Payment"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="@android:color/white"
+        android:layout_gravity="bottom|center"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_bg"
+        />
+    <TextView
+        android:id="@+id/feeDueDate"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/feePaidDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+</LinearLayout>
